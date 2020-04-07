@@ -1,0 +1,32 @@
+body{
+    background: #2F3640;
+    height: 700px;
+}
+.data-container{
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+    color: #FFFFFF;
+}
+.cases{
+    font-size: 70px;
+    color: #EE3D48;
+}
+.cases_text{
+    font-size: 70px;
+    position: sticky;   
+    text-align: center;
+  top: 100px;
+}
+.date{
+ text-align: center;
+}
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #EE3D48;
+  color: white;
+  text-align: center;
+}
