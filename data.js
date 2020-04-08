@@ -1,12 +1,13 @@
 
-$.getJSON("https://api.covid19api.com/summary",function(data){
+$.getJSON("https://corona.lmao.ninja/countries",function(data){
     console.log(data)
 
     var cases = 
-        data.Countries[107].TotalConfirmed;
+        data[16].cases;
     
     var date =
-        data.Countries[107].NewConfirmed;
+        data[16].todayCases;
+console.log(length-1)
    $('.cases').append(cases)
    $('.date').append(date)
 })
