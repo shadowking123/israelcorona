@@ -1,6 +1,6 @@
 body{
     background: #2F3640;
-    height: 700px;
+    height: 900px;
 }
 .data-container{
     text-align: center;
@@ -18,19 +18,52 @@ body{
   top: 100px;
 }
 .date{
- text-align: center;
+  font-size: 70px;
+  color: #EE3D48;
+}
+.date_text{
+  font-size: 70px;
+  position: sticky;   
+  text-align: center;
+top: 100px;
 }
 
+.active{
+  font-size: 70px;
+  color: #EE3D48;
+}
+.active_text{
+  font-size: 70px;
+  position: sticky;   
+  text-align: center;
+  top: 100px;
+}
+.recovered{
+font-size: 70px;
+color: rgb(144, 245, 119);
+}
+.recovered_text{
+font-size: 70px;
+position: sticky;   
+text-align: center;
+top: 100px;
+}
+.death{
+  font-size: 70px;
+  color: rgb(197, 29, 40);
+}
+.death_text{
+  font-size: 70px;
+  position: sticky;   
+  text-align: center;
+  top: 100px;
+}
 footer{
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: #EE3D48;
-  
-  text-align: center;
-}
-a{
   color: white;
-  text-decoration: none;
+  text-align: center;
 }

@@ -1,12 +1,35 @@
 
-$.getJSON("https://api.covid19api.com/summary",function(data){
+$.getJSON("https://corona.lmao.ninja/countries",function(data){
     console.log(data)
+    
+    var israel;
+    var i;
+    for (i = 0; i < data.length; i++) {
+      if (data[i].country == "Israel"){
+          israel = i;
+          break;
+      }
+    }
+    console.log("log " +  israel)
 
-    var cases = 
-        data.Countries[107].TotalConfirmed;
+    var active = 
+        data[israel].active
+    
+    var recovered = 
+        data[israel].recovered
+
+    var deaths=
+        data[israel].deaths
     
     var date =
-        data.Countries[107].NewConfirmed;
+        data[israel].todayCases;
+    
+    var cases = 
+        data[israel].cases;
+    
+   $('.active').append(active)
+   $('.recovered').append(recovered)
+   $('.death').append(deaths)
    $('.cases').append(cases)
    $('.date').append(date)
 })
