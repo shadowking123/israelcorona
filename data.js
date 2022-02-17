@@ -1,6 +1,6 @@
 
-$.getJSON("https://corona.lmao.ninja/countries",function(data){
-    console.log(data)
+$.getJSON("https://corona.lmao.ninja/v3/covid-19/countries",function(data){
+
     
     var israel;
     var i;
